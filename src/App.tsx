@@ -7,13 +7,14 @@ import {
   Link,
   Text,
   VStack,
-} from '@chakra-ui/react'
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import reactLogo from './assets/react.svg'
+} from "@chakra-ui/react";
+import { useState } from "react";
+
+import viteLogo from "@/assets/vite.svg";
+import reactLogo from "@/assets/react.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <VStack gap={8} align="center" justify="center" minH="100vh" p={8}>
@@ -24,7 +25,7 @@ function App() {
             alt="Vite logo"
             h="24"
             transition="all 0.3s"
-            _hover={{ transform: 'scale(1.1)' }}
+            _hover={{ transform: "scale(1.1)" }}
           />
         </Link>
         <Link href="https://react.dev" target="_blank" rel="noreferrer">
@@ -33,7 +34,7 @@ function App() {
             alt="React logo"
             h="24"
             transition="all 0.3s"
-            _hover={{ transform: 'scale(1.1)' }}
+            _hover={{ transform: "scale(1.1)" }}
           />
         </Link>
       </HStack>
@@ -42,7 +43,7 @@ function App() {
         Vite + React + Chakra UI
       </Heading>
 
-      <Box p={8} borderRadius="md" bg="gray.50" _dark={{ bg: 'gray.800' }}>
+      <Box p={8} borderRadius="md" bg="gray.50" _dark={{ bg: "gray.800" }}>
         <VStack gap={4}>
           <Button
             onClick={() => setCount((count) => count + 1)}
@@ -57,11 +58,11 @@ function App() {
         </VStack>
       </Box>
 
-      <Text color="gray.600" _dark={{ color: 'gray.400' }}>
+      <Text color="gray.600" _dark={{ color: "gray.400" }}>
         Click on the Vite and React logos to learn more
       </Text>
     </VStack>
-  )
+  );
 }
 
-export default App
+export default App;
