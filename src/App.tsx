@@ -46,7 +46,7 @@ function App() {
         <VStack gap={4}>
           <Button
             onClick={() => setCount((count) => count + 1)}
-            colorScheme="blue"
+            colorPalette="gray"
             size="lg"
           >
             count is {count}
